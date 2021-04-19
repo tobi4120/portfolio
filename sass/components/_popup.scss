@@ -21,6 +21,10 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .4s .2s;
+
+        @include respond(phone) {
+            
+        }
     }
 
     &__left {
@@ -28,9 +32,17 @@
         display: table-cell;
         vertical-align: middle;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             width: 100%;
-            display: block;
+            display: flex;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        @include respond(mini-phone) {
+            display: none;
         }
     }
 
@@ -40,9 +52,18 @@
         vertical-align: middle;
         padding: 3rem 5rem;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             width: 100%;
             display: block;
+        }
+
+        @include respond(mini-phone) {
+            max-height: 75vh;
+            overflow: scroll;
+
+            .heading-secondary {
+                font-size: 2.1rem;
+            }
         }
     }
 
@@ -50,7 +71,7 @@
         display: block;
         width: 100%;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             width: 40%;
             height: 20rem;
             object-fit: cover;
@@ -74,6 +95,10 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        @include respond(phone) {
+            column-count: 1;
+        }
     }
 
     &:target {

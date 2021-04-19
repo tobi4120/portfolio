@@ -1,5 +1,6 @@
 /* 
 $breakpoint argument choices:
+- mini-phone
 - phone
 - tab-port
 - tab-land
@@ -595,23 +596,34 @@ body {
     width: 33.33333%;
     display: table-cell;
     vertical-align: middle; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .popup__left {
         width: 100%;
-        display: block; } }
+        display: flex; }
+        .popup__left img {
+          width: 50%; } }
+    @media (max-width: 25em) {
+      .popup__left {
+        display: none; } }
   .popup__right {
     width: 66.666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .popup__right {
         width: 100%;
         display: block; } }
+    @media (max-width: 25em) {
+      .popup__right {
+        max-height: 75vh;
+        overflow: scroll; }
+        .popup__right .heading-secondary {
+          font-size: 2.1rem; } }
   .popup__img {
     display: block;
     width: 100%; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .popup__img {
         width: 40%;
         height: 20rem;
@@ -630,6 +642,9 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 37.5em) {
+      .popup__text {
+        column-count: 1; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
