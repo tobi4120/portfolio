@@ -61,7 +61,7 @@ body {
       padding: 0; } }
 
 ::selection {
-  background-color: #51c4d3;
+  background-color: #126e82;
   color: #fff; }
 
 body {
@@ -98,7 +98,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #126e82, #132c33);
+  background-image: linear-gradient(to right, #51c4d3, #132c33);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
@@ -178,10 +178,10 @@ body {
     background-color: #fff; }
 
 .btn--green {
-  background-color: #51c4d3;
+  background-color: #126e82;
   color: #fff; }
   .btn--green::after {
-    background-color: #51c4d3; }
+    background-color: #126e82; }
 
 .btn::after {
   content: "";
@@ -201,15 +201,15 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #51c4d3;
+  color: #126e82;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #51c4d3;
+  border-bottom: 1px solid #126e82;
   padding: 3px;
   transition: all .2s; }
 
 .btn-text:hover {
-  background-color: #51c4d3;
+  background-color: #126e82;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -263,7 +263,7 @@ body {
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20;
-      outline: 1rem solid #51c4d3; }
+      outline: 1rem solid #126e82; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
@@ -281,7 +281,7 @@ body {
   .feature-box__icon {
     font-size: 6rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #126e82, #132c33);
+    background-image: linear-gradient(to right, #51c4d3, #132c33);
     -webkit-background-clip: text;
     color: transparent; }
     @media only screen and (max-width: 56.25em) {
@@ -314,7 +314,7 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #126e82, #132c33); }
+        background-image: linear-gradient(to right bottom, #51c4d3, #132c33); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
@@ -332,7 +332,7 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #126e82, #132c33), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #51c4d3, #132c33), url(../img/nat-6.jpg); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
   .card__heading {
@@ -352,7 +352,7 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(18, 110, 130, 0.85), rgba(19, 44, 51, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(81, 196, 211, 0.85), rgba(19, 44, 51, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details {
@@ -506,7 +506,7 @@ body {
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #51c4d3; }
+    border-bottom: 3px solid #126e82; }
   .form__input:focus:invalid {
     border-bottom: 3px solid #ff7730; }
   .form__input::-webkit-input-placeholder {
@@ -545,7 +545,7 @@ body {
 .form__radio-button {
   height: 3rem;
   width: 3rem;
-  border: 5px solid #51c4d3;
+  border: 5px solid #126e82;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -561,7 +561,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #51c4d3;
+    background-color: #126e82;
     opacity: 0;
     transition: opacity .2s; }
 
@@ -664,11 +664,11 @@ body {
     display: inline-block;
     line-height: 1; }
   .popup__close:hover {
-    color: #51c4d3; }
+    color: #126e82; }
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(18, 110, 130, 0.8), rgba(19, 44, 51, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(81, 196, 211, 0.8), rgba(19, 44, 51, 0.8));
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -676,7 +676,7 @@ body {
   position: relative; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(18, 110, 130, 0.8), rgba(19, 44, 51, 0.8)); } }
+      background-image: linear-gradient(to right bottom, rgba(81, 196, 211, 0.8), rgba(19, 44, 51, 0.8)); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -775,7 +775,7 @@ body {
     display: inline-block;
     transition: all .2s; }
   .footer__link:hover, .footer__link:active {
-    color: #51c4d3; }
+    color: #126e82; }
   .footer__copyright {
     border-top: 1px solid #777;
     padding-top: 2rem;
@@ -798,7 +798,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(18, 110, 130, 0.8), rgba(19, 44, 51, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(81, 196, 211, 0.8), rgba(19, 44, 51, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
@@ -825,7 +825,7 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #126e82, #132c33); }
+  background-image: linear-gradient(to right bottom, #51c4d3, #132c33); }
   @media only screen and (max-width: 56.25em) {
     .section-book {
       padding: 10rem 0; } }
