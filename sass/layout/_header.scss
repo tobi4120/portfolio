@@ -3,8 +3,7 @@
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8), 
-        rgba($color-primary-dark, 0.8)), 
-        url(../img/hero-small.jpg);
+        rgba($color-primary-dark, 0.8));
     background-size: cover;
     background-position: top;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -17,8 +16,7 @@
         background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8), 
-        rgba($color-primary-dark, 0.8)), 
-        url(../img/hero.jpg);
+        rgba($color-primary-dark, 0.8));
     }
 
     @include respond(phone) {
@@ -28,12 +26,16 @@
 
     &__logo-box {
         position: absolute;
-        top: 4rem;
-        left: 4rem;
+        top: 3rem;
+        left: 3rem;
     }
 
     &__logo {
-        height: 3.5rem;
+        font-family: "Bungee Shade", cursive;
+        font-size: 6rem;
+        color: $color-white;
+        line-height: 0.5;
+        cursor: default;
     }
     
     &__text-box {
