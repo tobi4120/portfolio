@@ -225,14 +225,16 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform .3s; }
+  transition: transform .3s;
+  height: 29rem; }
   @media only screen and (max-width: 56.25em) {
     .feature-box {
-      padding: 2rem; } }
+      padding: 2rem;
+      height: auto; } }
   .feature-box__icon {
     font-size: 6rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #51c4d3, #132c33);
+    background-image: linear-gradient(to right, #51c4d3, #126e82);
     -webkit-background-clip: text;
     color: transparent; }
     @media only screen and (max-width: 56.25em) {
@@ -761,16 +763,16 @@ body {
     .section-about {
       padding: 20rem 0; } }
 
-.section-features {
+.section-tech {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(81, 196, 211, 0.8), rgba(19, 44, 51, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(81, 196, 211, 0.8), rgba(19, 44, 51, 0.8)), url(../img/city-roads.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
-  .section-features > * {
+  .section-tech > * {
     transform: skewY(7deg); }
   @media only screen and (max-width: 56.25em) {
-    .section-features {
+    .section-tech {
       padding: 10rem 0; } }
 
 .section-tours {
