@@ -59,7 +59,10 @@
         border-top-right-radius: 3px;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
+            background-color: $color-secondary-dark;
+            img {
+                width: 100%;
+            }
         }
 
         &--2 {
@@ -80,7 +83,7 @@
         top: 12rem;
         right: 2rem;
         text-align: right;
-        width: 75%;
+        width: 65%;
     }
 
     &__heading-span {
@@ -137,20 +140,11 @@
         text-align: center;
     }
 
-    &__price-box {
+    &__desc {
         text-align: center;
         color: $color-white;
         margin-bottom: 8rem;
-    }
-
-    &__price-only {
-        font-size: 1.4rem;
-        text-transform: uppercase;
-    }
-
-    &__price-value {
-        font-size: 6rem;
-        font-weight: 100;
+        font-size: 2rem;
     }
 
     @media only screen and (max-width: 56.25em),
@@ -189,12 +183,8 @@
             padding: 7rem 4rem 4rem 4rem;
         }
 
-        &__price-box {
+        &__desc {
             margin-bottom: 3rem;
-        }
-
-        &__price-value {
-            font-size: 5rem;
         }
     }
 }

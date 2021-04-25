@@ -15,6 +15,8 @@
         <title>Michael Tobis | Front End Engineer</title>
     </head>
     <body>
+
+        <!-- Header -->
         <header class="header">
             <div class="header__logo-box">
                 <p class="header__logo">M</p>
@@ -38,6 +40,8 @@
         </header>
 
         <main>
+
+            <!-- About me -->
             <section class="section-about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
@@ -70,6 +74,7 @@
                 </div>
             </section>
 
+            <!-- Technologies -->
             <section class="section-tech">
                 <div class="row">
                     <div class="col-1-of-4">
@@ -123,10 +128,11 @@
                 </div>
             </section>
 
-            <section class="section-tours">
+            <!-- Projects -->
+            <section class="section-projects">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        Most popular tours
+                        Personal Projects
                     </h2>
                 </div>
 
@@ -135,28 +141,25 @@
                         <div class="card">
                             <div class="card__side card__side--front">
                                 <div class="card__picture card__picture--1">
-                                    &nbsp;
+                                    <img src="img/notion.png" alt="Notion">
                                 </div>
                                 <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--1">The Sea Explorer</span>
+                                    <span class="card__heading-span card__heading-span--1">Notion Clone</span>
                                 </h4>
                                 <div class="card__details">
                                     <ul>
-                                        <li>3 day tour</li>
-                                        <li>Up to 30 people</li>
-                                        <li>2 tour guides</li>
-                                        <li>Sleep in cozy hotels</li>
-                                        <li>Difficulty: Easy</li>
+                                        <li>React | Redux</li>
+                                        <li>Django</li>
+                                        <li>PostgreSQL</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-1">
                                 <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">$297</p>
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">Book now!</a>
+                                    <p class="card__desc">
+                                        A new innovative and powerful way to take notes.
+                                    </p>
+                                    <a href="#notion-clone-popup" class="btn btn--white">Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -229,101 +232,9 @@
                     <a href="#" class="btn btn--green">Discover all tours</a>
                 </div>
             </section>
-
-            <section class="section-stories">
-                <div class="bg-video">
-                    <video class="bg-video__content" autoplay muted loop>
-                        <source src="img/video.mp4" type="video/mp4">
-                        <source src="img/video.webm" type="video/webm">
-                        Your browser is not supported!
-                    </video>
-                </div>
-
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        We make people genuinely happy
-                    </h2>
-                </div>
-
-                <div class="row">
-                    <div class="story">
-                        <figure class="story__shape">
-                            <img class="story__img" src="img/nat-8.jpg" alt="Person on a tour">
-                            <figcaption class="story__caption">Mary Smith</figcaption>
-                        </figure>
-                        <div class="story__text">
-                            <h3 class="heading-tertiary u-margin-bottom-small ">I had the best week ever with my family</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto officiis sunt neque explicabo quia maxime asperiores quidem. Blanditiis quisquam odit temporibus ex vitae quo debitis a animi natus alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis cupiditate commodi.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="story">
-                        <figure class="story__shape">
-                            <img class="story__img" src="img/nat-9.jpg" alt="Person on a tour">
-                            <figcaption class="story__caption">Jack Wilson</figcaption>
-                        </figure>
-                        <div class="story__text">
-                            <h3 class="heading-tertiary u-margin-bottom-small ">Wow! My life is completely different now</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto officiis sunt neque explicabo quia maxime asperiores quidem. Blanditiis quisquam odit temporibus ex vitae quo debitis a animi natus alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis cupiditate commodi.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn-text">Read all stories &rarr;</a>
-                </div>
-            </section>
-
-            <section class="section-book">
-                <div class="row">
-                    <div class="book">
-                        <div class="book__form">
-                            <form action="#" class="form" autocomplete="off">
-                                <div class="u-margin-bottom-medium">
-                                    <h2 class="heading-secondary">
-                                        Start booking now
-                                    </h2>
-                                </div>
-                                <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Full name" id="name" required>
-                                    <label for="name" class="form__label">Full name</label>
-                                </div>
-
-                                <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                                    <label for="email" class="form__label">Email address</label>
-                                </div>
-
-                                <div class="form__group u-margin-bottom-medium">
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="small" name="size">
-                                        <label for="small" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Small tour group
-                                        </label>
-                                    </div>
-
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="large" name="size">
-                                        <label for="large" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Large tour group
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="form__group">
-                                    <button class="btn btn--green">Next step &rarr;</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main>
 
+        <!-- Footer -->
         <footer class="footer">
             <div class="footer__logo-box">
 
@@ -352,6 +263,28 @@
             </div>
         </footer>
 
+        <!-- Popups -->
+        <div class="popup" id="notion-clone-popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <iframe  class="popup__video" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+                </div>
+                <div class="popup__right">
+                    <a href="#projects" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Notion Clone</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Made with React and Django</h3>
+                    <p class="popup__text">
+                        Notion is an all in one workplace for note-taking, journaling, project management and more. Users can create tables, kanbans, to-do lists etc.                
+                    </p>
+                    <p class="popup__text">
+                        Please give the site some time to load as it was deployed using a free server.
+                    </p>
+                    <a href="https://notion-app-clone.herokuapp.com/" class="btn btn--grey">Live Site</a>
+                    <a href="https://github.com/tobi4120/notion-clone" class="btn btn--grey">Source Code</a>
+                </div>
+            </div>
+        </div>
+
         <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">
@@ -359,7 +292,7 @@
                     <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
                 </div>
                 <div class="popup__right">
-                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <a href="#projects" class="popup__close">&times;</a>
                     <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
                     <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
                     <p class="popup__text">

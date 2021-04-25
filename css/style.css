@@ -183,6 +183,12 @@ body {
   .btn--green::after {
     background-color: #126e82; }
 
+.btn--grey {
+  background-color: #666562;
+  color: #fff; }
+  .btn--grey::after {
+    background-color: #666562; }
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -265,7 +271,7 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+        background-image: linear-gradient(to right bottom, #cccbca, rgba(55, 53, 47, 0.6)); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #51c4d3, #132c33); }
       .card__side--back-3 {
@@ -283,7 +289,9 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+      background-color: rgba(55, 53, 47, 0.6); }
+      .card__picture--1 img {
+        width: 100%; }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #51c4d3, #132c33), url(../img/nat-6.jpg); }
     .card__picture--3 {
@@ -297,13 +305,13 @@ body {
     top: 12rem;
     right: 2rem;
     text-align: right;
-    width: 75%; }
+    width: 65%; }
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(204, 203, 202, 0.85), rgba(55, 53, 47, 0.85)); }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(81, 196, 211, 0.85), rgba(19, 44, 51, 0.85)); }
     .card__heading-span--3 {
@@ -327,16 +335,11 @@ body {
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center; }
-  .card__price-box {
+  .card__desc {
     text-align: center;
     color: #fff;
-    margin-bottom: 8rem; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
+    margin-bottom: 8rem;
+    font-size: 2rem; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
@@ -361,68 +364,8 @@ body {
         transform: translate(0);
         width: 100%;
         padding: 7rem 4rem 4rem 4rem; }
-      .card__price-box {
-        margin-bottom: 3rem; }
-      .card__price-value {
-        font-size: 5rem; } }
-
-.story {
-  width: 75%;
-  margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 3px;
-  padding: 6rem;
-  padding-left: 9rem;
-  font-size: 1.6rem;
-  transform: skewX(-12deg); }
-  @media only screen and (max-width: 56.25em) {
-    .story {
-      width: 100%;
-      padding: 4rem;
-      padding-left: 7rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .story {
-      transform: skewX(0); } }
-  .story__shape {
-    width: 15rem;
-    height: 15rem;
-    float: left;
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    transform: skewX(12deg) translateX(-3rem);
-    position: relative; }
-    @media only screen and (max-width: 37.5em) {
-      .story__shape {
-        transform: translateX(-3rem) skewX(0); } }
-  .story__img {
-    height: 100%;
-    transform: translateX(-4rem) scale(1.4);
-    transition: all .5s; }
-  .story__text {
-    transform: skewX(12deg); }
-    @media only screen and (max-width: 37.5em) {
-      .story__text {
-        transform: skewX(0); } }
-  .story__caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    text-align: center;
-    opacity: 0;
-    transition: all .5s; }
-  .story:hover .story__caption {
-    opacity: 1;
-    transform: translate(-50%, -50%); }
-  .story:hover .story__img {
-    transform: translateX(-4rem) scale(1);
-    filter: blur(3px) brightness(80%); }
+      .card__desc {
+        margin-bottom: 3rem; } }
 
 .bg-video {
   position: absolute;
@@ -437,89 +380,6 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover; }
-
-.form__group:not(:last-child) {
-  margin-bottom: 2rem; }
-
-.form__input {
-  font-size: 1.5rem;
-  font-family: inherit;
-  color: inherit;
-  padding: 1.5rem 2rem;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  border-bottom: 3px solid transparent;
-  width: 90%;
-  display: block;
-  transition: all .3s; }
-  @media only screen and (max-width: 56.25em) {
-    .form__input {
-      width: 100%; } }
-  .form__input:focus {
-    outline: none;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #126e82; }
-  .form__input:focus:invalid {
-    border-bottom: 3px solid #ff7730; }
-  .form__input::-webkit-input-placeholder {
-    color: #999; }
-
-.form__label {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: .7rem;
-  display: block;
-  transition: all .3s; }
-
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem); }
-
-.form__radio-group {
-  width: 49%;
-  display: inline-block; }
-  @media only screen and (max-width: 56.25em) {
-    .form__radio-group {
-      width: 100%;
-      margin-bottom: 2rem; } }
-
-.form__radio-input {
-  display: none; }
-
-.form__radio-label {
-  font-size: 1.6rem;
-  cursor: pointer;
-  position: relative;
-  padding-left: 4rem; }
-
-.form__radio-button {
-  height: 3rem;
-  width: 3rem;
-  border: 5px solid #126e82;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: -.4rem; }
-  .form__radio-button::after {
-    content: "";
-    display: block;
-    height: 1.3rem;
-    width: 1.3rem;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #126e82;
-    opacity: 0;
-    transition: opacity .2s; }
-
-.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
-  opacity: 1; }
 
 .popup {
   height: 100vh;
@@ -539,7 +399,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 85%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
@@ -547,22 +407,15 @@ body {
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
-    transition: all .4s .2s; }
+    transition: all .4s .2s;
+    height: 70%; }
   .popup__left {
-    width: 33.33333%;
+    width: 70%;
     display: table-cell;
-    vertical-align: middle; }
-    @media only screen and (max-width: 56.25em) {
-      .popup__left {
-        width: 100%;
-        display: flex; }
-        .popup__left img {
-          width: 50%; } }
-    @media only screen and (max-width: 25em) {
-      .popup__left {
-        display: none; } }
+    vertical-align: middle;
+    height: 100%; }
   .popup__right {
-    width: 66.666667%;
+    width: 30%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
@@ -576,31 +429,19 @@ body {
         overflow: scroll; }
         .popup__right .heading-secondary {
           font-size: 2.1rem; } }
-  .popup__img {
+  .popup__video {
     display: block;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
     @media only screen and (max-width: 56.25em) {
-      .popup__img {
+      .popup__video {
         width: 40%;
         height: 20rem;
         object-fit: cover;
         display: inline; } }
   .popup__text {
     font-size: 1.4rem;
-    margin-bottom: 4rem;
-    column-count: 2;
-    column-gap: 4rem;
-    column-rule: 1px solid #eee;
-    -moz-column-count: 2;
-    -moz-column-gap: 4rem;
-    -moz-column-rule: 1px solid #eee;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto; }
-    @media only screen and (max-width: 37.5em) {
-      .popup__text {
-        column-count: 1; } }
+    margin-bottom: 4rem; }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -618,6 +459,15 @@ body {
     line-height: 1; }
   .popup__close:hover {
     color: #126e82; }
+
+#notion-clone-popup h2 {
+  background-image: linear-gradient(to right, rgba(55, 53, 47, 0.6), rgba(55, 53, 47, 0.8));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem; }
+
+#notion-clone-popup .btn:not(:last-child) {
+  margin-bottom: 1rem; }
 
 .header {
   height: 95vh;
@@ -775,46 +625,10 @@ body {
     .section-tech {
       padding: 10rem 0; } }
 
-.section-tours {
+.section-projects {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
   @media only screen and (max-width: 56.25em) {
-    .section-tours {
+    .section-projects {
       padding: 20rem 0 10rem 0; } }
-
-.section-stories {
-  position: relative;
-  padding: 15rem 0; }
-  @media only screen and (max-width: 56.25em) {
-    .section-stories {
-      padding: 10rem 0; } }
-
-.section-book {
-  padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #51c4d3, #132c33); }
-  @media only screen and (max-width: 56.25em) {
-    .section-book {
-      padding: 10rem 0; } }
-
-.book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
-  background-size: cover;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
-  @media only screen and (max-width: 75em) {
-    .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 70%), url(../img/nat-10.jpg); } }
-  @media only screen and (max-width: 56.25em) {
-    .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
-  .book__form {
-    width: 50%;
-    padding: 6rem; }
-    @media only screen and (max-width: 75em) {
-      .book__form {
-        width: 70%; } }
-    @media only screen and (max-width: 56.25em) {
-      .book__form {
-        width: 100%;
-        padding: 6rem 4rem; } }

@@ -50,6 +50,15 @@
             background-color: $color-primary;
         }
     }
+
+    &--grey {
+        background-color: rgb(102, 101, 98);
+        color: $color-white;
+
+        &::after {
+            background-color: rgb(102, 101, 98);
+        }
+    }
     
     &::after {
         content: "";
