@@ -68,6 +68,15 @@
             background-color: $color-purple;
         }
     }
+
+    &--blue {
+        background-color: $color-tertiary-medium;
+        color: $color-white; 
+
+        &::after {
+            background-color: $color-tertiary-medium;
+        }
+    }
     
     &::after {
         content: "";

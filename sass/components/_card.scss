@@ -4,10 +4,10 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 52rem;
+    height: 43rem;
 
     &__side {
-        height: 52rem;
+        height: 43rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -35,7 +35,7 @@
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+                background-image: linear-gradient(to right bottom, $color-tertiary-medium, $color-tertiary-dark);
             }
         }
     }
@@ -70,7 +70,7 @@
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7.jpg);
+            background-image: url(../img/social-media.png);
         }
     }
 
@@ -84,6 +84,10 @@
         right: 2rem;
         text-align: right;
         width: 65%;
+    }
+
+    &__heading--3 {
+        width: 80%;
     }
 
     &__heading-span {
@@ -105,8 +109,8 @@
 
         &--3 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-tertiary-light, 0.85), 
-            rgba($color-tertiary-dark, 0.85));
+            $color-tertiary-medium,
+            $color-tertiary-dark);
         }
     }
 

@@ -195,6 +195,12 @@ body {
   .btn--purple::after {
     background-color: #895ef7; }
 
+.btn--blue {
+  background-color: #76c1d6;
+  color: #fff; }
+  .btn--blue::after {
+    background-color: #76c1d6; }
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -259,9 +265,9 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 43rem; }
   .card__side {
-    height: 52rem;
+    height: 43rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -281,7 +287,7 @@ body {
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #a887fa, #895ef7); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+        background-image: linear-gradient(to right bottom, #76c1d6, #4f95a8); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -301,7 +307,7 @@ body {
     .card__picture--2 {
       background-image: url(../img/trackr.png); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
+      background-image: url(../img/social-media.png); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -312,6 +318,8 @@ body {
     right: 2rem;
     text-align: right;
     width: 65%; }
+  .card__heading--3 {
+    width: 80%; }
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
@@ -321,7 +329,7 @@ body {
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, #a887fa, #4a27a3); }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      background-image: linear-gradient(to right bottom, #76c1d6, #4f95a8); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -485,6 +493,15 @@ body {
 
 #trackr-popup .popup__close:hover {
   color: #895ef7; }
+
+#social-clone-popup h2 {
+  background-image: linear-gradient(to right, #76c1d6, #4f95a8);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.5rem; }
+
+#social-clone-popup .popup__close:hover {
+  color: #4f95a8; }
 
 .header {
   height: 95vh;
