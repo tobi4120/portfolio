@@ -31,7 +31,7 @@
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                background-image: linear-gradient(to right bottom, $color-purple-light, $color-purple);
             }
 
             &-3 {
@@ -66,7 +66,7 @@
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6.jpg);
+            background-image: url(../img/trackr.png);
         }
 
         &--3 {
@@ -93,14 +93,14 @@
 
         &--1 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-secondary-light, 0.85), 
-            rgba($color-secondary-dark, 0.85));
+            $color-secondary-light, 
+            $color-secondary-dark);
         }
 
         &--2 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-primary-light, 0.85), 
-            rgba($color-primary-dark, 0.85));
+            $color-purple-light, 
+            $color-purple-dark);
         }
 
         &--3 {

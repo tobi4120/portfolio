@@ -27,14 +27,14 @@
     }
 
     &__left {
-        width: 70%;
+        width: 65%;
         display: table-cell;
         vertical-align: middle;
         height: 100%;
     }
 
     &__right {
-        width: 30%;
+        width: 35%;
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
@@ -99,6 +99,10 @@
             color: $color-primary;
         }
     }
+
+    .btn:not(:last-child) {
+        margin-bottom: 1rem;
+    }
 }
 
 // Notion Clone Popup
@@ -110,7 +114,21 @@
         font-size: 3rem;
     }
 
-    .btn:not(:last-child) {
-        margin-bottom: 1rem;
+    .popup__close:hover {
+        color: $color-secondary-dark-2;
+    }
+}
+
+// Trackr Popup
+#trackr-popup {
+    h2 {
+        background-image: linear-gradient(to right,  $color-purple-light, $color-purple,);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 3rem;
+    }
+
+    .popup__close:hover {
+        color: $color-purple;
     }
 }

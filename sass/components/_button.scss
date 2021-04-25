@@ -52,11 +52,20 @@
     }
 
     &--grey {
-        background-color: rgb(102, 101, 98);
-        color: $color-white;
+        background-color: $color-secondary-dark;
+        color: $color-white; 
 
         &::after {
-            background-color: rgb(102, 101, 98);
+            background-color: $color-secondary-dark;
+        }
+    }
+
+    &--purple {
+        background-color: $color-purple;
+        color: $color-white; 
+
+        &::after {
+            background-color: $color-purple;
         }
     }
     
