@@ -155,7 +155,7 @@ body {
   transition: all 0.2s;
   display: inline-block;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   border: none;
   cursor: pointer; }
 
@@ -200,6 +200,12 @@ body {
   color: #fff; }
   .btn--blue::after {
     background-color: #76c1d6; }
+
+.btn--sky-blue {
+  background-color: #569fc9;
+  color: #fff; }
+  .btn--sky-blue::after {
+    background-color: #569fc9; }
 
 .btn::after {
   content: "";
@@ -288,6 +294,8 @@ body {
         background-image: linear-gradient(to right bottom, #a887fa, #895ef7); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #76c1d6, #4f95a8); }
+      .card__side--back--4 {
+        background-image: linear-gradient(to right bottom, #569fc9, #3d7391); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -308,6 +316,8 @@ body {
       background-image: url(../img/trackr.png); }
     .card__picture--3 {
       background-image: url(../img/social-media.png); }
+    .card__picture--4 {
+      background-image: url(../img/loyalT.jpeg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -330,6 +340,8 @@ body {
       background-image: linear-gradient(to right bottom, #a887fa, #4a27a3); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, #76c1d6, #4f95a8); }
+    .card__heading-span--4 {
+      background-image: linear-gradient(to right bottom, #569fc9, #3d7391); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -474,7 +486,8 @@ body {
   .popup__close:hover {
     color: #126e82; }
   .popup .btn:not(:last-child) {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    margin-right: 1rem; }
 
 #notion-clone-popup h2 {
   background-image: linear-gradient(to right, #706f6c, #524f46);
@@ -502,6 +515,15 @@ body {
 
 #social-clone-popup .popup__close:hover {
   color: #4f95a8; }
+
+#loyalt-popup h2 {
+  background-image: linear-gradient(to right, #569fc9, #3d7391);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.5rem; }
+
+#loyalt-popup .popup__close:hover {
+  color: #3d7391; }
 
 .header {
   height: 95vh;

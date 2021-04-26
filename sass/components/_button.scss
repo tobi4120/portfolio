@@ -9,7 +9,7 @@
         transition: all 0.2s;
         display: inline-block;
         position: relative;
-        font-size: $default-font-size;
+        font-size: 1.3rem;
 
         // Change for the <button> element
         border: none;
@@ -75,6 +75,15 @@
 
         &::after {
             background-color: $color-tertiary-medium;
+        }
+    }
+
+    &--sky-blue {
+        background-color: $color-sky-blue;
+        color: $color-white; 
+
+        &::after {
+            background-color: $color-sky-blue;
         }
     }
     

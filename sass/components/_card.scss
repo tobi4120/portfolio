@@ -37,6 +37,10 @@
             &-3 {
                 background-image: linear-gradient(to right bottom, $color-tertiary-medium, $color-tertiary-dark);
             }
+
+            &--4 {
+                background-image: linear-gradient(to right bottom, $color-sky-blue, $color-sky-blue-dark);
+            }
         }
     }
 
@@ -71,6 +75,10 @@
 
         &--3 {
             background-image: url(../img/social-media.png);
+        }
+
+        &--4 {
+            background-image: url(../img/loyalT.jpeg);
         }
     }
 
@@ -111,6 +119,12 @@
             background-image: linear-gradient(to right bottom, 
             $color-tertiary-medium,
             $color-tertiary-dark);
+        }
+
+        &--4 {
+            background-image: linear-gradient(to right bottom, 
+            $color-sky-blue,
+            $color-sky-blue-dark);
         }
     }
 
