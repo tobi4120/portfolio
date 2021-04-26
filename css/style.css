@@ -313,7 +313,8 @@ body {
       .card__picture--1 img {
         width: 100%; }
     .card__picture--2 {
-      background-image: url(../img/trackr.png); }
+      background-image: url(../img/trackr.png);
+      background-position: center; }
     .card__picture--3 {
       background-image: url(../img/social-media.png); }
     .card__picture--4 {
@@ -641,7 +642,7 @@ body {
   .footer__copyright {
     border-top: 1px solid #fff;
     padding-top: 2rem;
-    text-align: left;
+    text-align: center;
     color: #f7f7f7;
     float: right; }
     @media only screen and (max-width: 56.25em) {
@@ -657,7 +658,8 @@ body {
     width: 60%; }
   .section-about .images {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     .section-about .images img {
       width: 35%;
       filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.3));
@@ -667,6 +669,14 @@ body {
     .section-about .images .django-logo {
       border-radius: 5px;
       margin-left: 25px; }
+  @media only screen and (max-width: 1800px) {
+    .section-about {
+      margin-top: -20vh; }
+      .section-about .heading-secondary {
+        margin-top: 3rem; } }
+  @media only screen and (max-width: 1130px) {
+    .section-about {
+      padding: 20rem 5rem; } }
   @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0; } }
@@ -679,6 +689,9 @@ body {
   margin-top: -10rem; }
   .section-tech > * {
     transform: skewY(7deg); }
+  @media only screen and (max-width: 1130px) {
+    .section-tech {
+      padding: 20rem 5rem; } }
   @media only screen and (max-width: 56.25em) {
     .section-tech {
       padding: 10rem 0; } }
@@ -687,6 +700,9 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
+  @media only screen and (max-width: 1130px) {
+    .section-projects {
+      padding: 20rem 5rem; } }
   @media only screen and (max-width: 56.25em) {
     .section-projects {
       padding: 20rem 0 10rem 0; } }
