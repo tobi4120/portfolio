@@ -430,45 +430,52 @@ body {
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-    display: table;
+    display: flex;
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .4s .2s;
     height: 70%; }
+    @media only screen and (max-width: 75em) {
+      .popup__content {
+        display: block;
+        height: 85%; } }
+    @media only screen and (max-width: 37.5em) {
+      .popup__content {
+        overflow: scroll; } }
   .popup__left {
     width: 65%;
-    display: table-cell;
     vertical-align: middle;
     height: 100%; }
+    @media only screen and (max-width: 75em) {
+      .popup__left {
+        height: 60%;
+        width: 100%; } }
   .popup__right {
     width: 35%;
-    display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 75em) {
       .popup__right {
-        width: 100%;
-        display: block; } }
-    @media only screen and (max-width: 25em) {
+        width: 100%; } }
+    @media only screen and (max-width: 75em) {
       .popup__right {
-        max-height: 75vh;
-        overflow: scroll; }
-        .popup__right .heading-secondary {
-          font-size: 2.1rem; } }
+        padding: 1rem 5rem; } }
+  @media only screen and (max-width: 75em) and (hover: none) {
+    .popup__right {
+      padding: 3rem 5rem; } }
   .popup__video {
     display: block;
     width: 100%;
     height: 100%; }
-    @media only screen and (max-width: 56.25em) {
-      .popup__video {
-        width: 40%;
-        height: 20rem;
-        object-fit: cover;
-        display: inline; } }
   .popup__text {
     font-size: 1.4rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .popup__text {
+        margin-bottom: 2rem; }
+        .popup__text:not(:last-of-type) {
+          margin-bottom: 0; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -489,6 +496,12 @@ body {
   .popup .btn:not(:last-child) {
     margin-bottom: 1rem;
     margin-right: 1rem; }
+  @media only screen and (max-width: 75em) {
+    .popup .u-margin-bottom-small {
+      margin-bottom: 0.5rem !important; } }
+  @media only screen and (max-width: 75em) and (hover: none) {
+    .popup .u-margin-bottom-small {
+      margin-bottom: 1.5rem !important; } }
 
 #notion-clone-popup h2 {
   background-image: linear-gradient(to right, #706f6c, #524f46);
@@ -513,6 +526,9 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   font-size: 2.5rem; }
+  @media only screen and (max-width: 1299px) {
+    #social-clone-popup h2 {
+      font-size: 2.1rem; } }
 
 #social-clone-popup .popup__close:hover {
   color: #4f95a8; }
