@@ -42,7 +42,8 @@ $breakpoint argument choices:
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -668,7 +669,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 20rem 0;
+  padding: 15rem 0;
   margin-top: -25vh; }
   .section-about .heading-secondary {
     width: 60%; }
@@ -714,7 +715,7 @@ body {
 
 .section-projects {
   background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
+  padding: 20rem 0 15rem 0;
   margin-top: -10rem; }
   @media only screen and (max-width: 1130px) {
     .section-projects {
