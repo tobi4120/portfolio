@@ -208,6 +208,12 @@ body {
   .btn--sky-blue::after {
     background-color: #569fc9; }
 
+.btn--spotify-grey {
+  background-color: #303030;
+  color: #fff; }
+  .btn--spotify-grey::after {
+    background-color: #303030; }
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -353,7 +359,7 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, #b0acac, #706f6c); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, #2ad165, #18a048); }
+      background-image: linear-gradient(to right bottom, #3f3e3e, #303030); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, #a887fa, #4a27a3); }
     .card__heading-span--4 {
@@ -528,6 +534,15 @@ body {
 
 #notion-clone-popup .popup__close:hover {
   color: #524f46; }
+
+#spotify-popup h2 {
+  background-image: linear-gradient(to right, #3f3e3e, #303030);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem; }
+
+#spotify-popup .popup__close:hover {
+  color: #303030; }
 
 #trackr-popup h2 {
   background-image: linear-gradient(to right, #a887fa, #895ef7);

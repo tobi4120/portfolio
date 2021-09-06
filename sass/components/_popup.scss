@@ -141,6 +141,20 @@
     }
 }
 
+// Spotify Popup
+#spotify-popup {
+    h2 {
+        background-image: linear-gradient(to right, $spotify-dark-grey-light, $spotify-dark-grey);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 3rem;
+    }
+
+    .popup__close:hover {
+        color: $spotify-dark-grey;
+    }
+}
+
 // Trackr Popup
 #trackr-popup {
     h2 {
