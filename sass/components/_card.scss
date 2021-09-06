@@ -31,14 +31,18 @@
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-purple-light, $color-purple);
+                background-image: linear-gradient(to right bottom, $spotify-dark-grey-light, $spotify-dark-grey);
             }
 
             &-3 {
+                background-image: linear-gradient(to right bottom, $color-purple-light, $color-purple);
+            }
+
+            &-4 {
                 background-image: linear-gradient(to right bottom, $color-tertiary-medium, $color-tertiary-dark);
             }
 
-            &--4 {
+            &--5 {
                 background-image: linear-gradient(to right bottom, $color-sky-blue, $color-sky-blue-dark);
             }
         }
@@ -70,15 +74,31 @@
         }
 
         &--2 {
+            background-color: rgb(24, 24, 24);
+            position: relative;
+
+            img {
+                margin-top: 10px;
+                width: 95%;
+                border-radius: 1%;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: rgb(35, 36, 35) 0px 7px 20px 100px;
+            }
+        }
+
+        &--3 {
             background-image: url(../img/trackr.png);
             background-position: center;
         }
 
-        &--3 {
+        &--4 {
             background-image: url(../img/social-media.png);
         }
 
-        &--4 {
+        &--5 {
             background-image: url(../img/loyalT.jpeg);
         }
     }
@@ -112,17 +132,23 @@
 
         &--2 {
             background-image: linear-gradient(to right bottom, 
+            rgb(42, 209, 101), 
+            rgb(24, 160, 72));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, 
             $color-purple-light, 
             $color-purple-dark);
         }
 
-        &--3 {
+        &--4 {
             background-image: linear-gradient(to right bottom, 
             $color-tertiary-medium,
             $color-tertiary-dark);
         }
 
-        &--4 {
+        &--5 {
             background-image: linear-gradient(to right bottom, 
             $color-sky-blue,
             $color-sky-blue-dark);
